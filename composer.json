@@ -1,0 +1,38 @@
+{
+    "name": "dispify/iterable_functions",
+    "type": "library",
+    "description": "Alternative functions for iterable type of value like built-in array_* ones",
+    "keywords": ["iterable", "functions"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Disparity",
+            "email": "disparity-github@yandex.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dispify\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dispify\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.1"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "scripts": {
+        "test": "@composer exec -v -- phpunit"
+    }
+}
